@@ -4,14 +4,14 @@ function mostrar()
 	// NO HACER NADA,pero si no es asi, y es soltero y no es menor, 
 	//mostrar el siguiente mensaje: 'Es soltero y no es menor.'
 	
-	var edad;
-	var estadoCivil;
+	var edadPersona;
+	var estadoCivilPersona;
 
-	edad = document.getElementById('txtIdEdad').value;
-	edad = parseInt (edad);
-	document.getElementById('estadoCivil').value = estadoCivil;
+	edadPersona = document.getElementById('txtIdEdad').value;
+	edadPersona = parseInt (edadPersona);
+	estadoCivilPersona = document.getElementById('estadoCivil').value;
 
-	if (edad>17 && estadoCivil == "soltero")
+	if (edadPersona>17 && estadoCivilPersona == "Soltero")
 	{
 		alert("Es soltero y no es menor.");
 	}
