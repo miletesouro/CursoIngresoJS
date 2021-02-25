@@ -4,7 +4,8 @@ function mostrar()
 	
 	switch(destinoIngresado)
 	{
-		case "Mar del Plata":
+		case "Mar del plata":
+		case "Cataratas":
 			alert("CALOR.");
 		break;
 

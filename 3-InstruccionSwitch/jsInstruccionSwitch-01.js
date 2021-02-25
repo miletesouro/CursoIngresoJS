@@ -18,9 +18,6 @@ switch(mesDelAño)
 	case "Diciembre":
 		alert("Felices fiestas!");
 	break;
-	default:
-		alert("ingreso un mes no valido.");
-	break;
 }
 
 }//FIN DE LA FUNCIÓN

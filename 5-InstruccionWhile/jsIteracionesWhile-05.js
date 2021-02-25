@@ -6,7 +6,9 @@ function mostrar()
 	var sexoIngresado;
 	sexoIngresado = prompt("ingrese f ó m .");
 
-
-
-	txtIdSexo.value=sexoIngresado;
+	while (sexoIngresado != "f" && sexoIngresado != "m" && sexoIngresado != "f" && sexoIngresado != "m")
+	{
+		sexoIngresado = prompt("Reingrese f o m.");
+	} 
+	
 }//FIN DE LA FUNCIÓN
