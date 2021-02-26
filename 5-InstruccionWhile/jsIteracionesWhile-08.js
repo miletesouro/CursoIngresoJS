@@ -17,3 +17,14 @@ function mostrar()
 	txtIdProducto.value=multiplicacionNegativos;
 
 }//FIN DE LA FUNCIÓN
+
+/* DO WHILE ES
+
+DO 
+{
+	
+	
+	
+	
+}
+WHILE (CONDICION); */

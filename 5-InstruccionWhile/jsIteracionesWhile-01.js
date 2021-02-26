@@ -2,7 +2,7 @@
 al presionar el botón mostrar 10 repeticiones 
 con números ASCENDENTE, desde el 1 al 10.*/
 function mostrar()
-{
+{ /*
 	var i; //las var que usamos en una estruc. repetitiva se programan con
 			//letras--> variable de control (i, j, k). Permite controlar el 
 		//flujo de iteraciones de una estructura repetitiva. 
@@ -17,18 +17,18 @@ function mostrar()
 		i = i + 1; // Incremento de la variable de control. 
 
 	}
+*/
 
-	/*
-	var i; declaracion de variable de control
-	i = 0; inicializacion de la variable de control.
+	var i; //declaracion de variable de control
+	i = 1;//inicializacion de la variable de control.
 	
-	while( i < 3) 
+	while( i < 11) 
 	{
-		alert ("Hola");		para que se ejecute 3 veces
-		i = i+1; O i++;			la estructura repetitiva.
+		document.write (i+ "<br>");	//	para que se ejecute 3 veces
+		i = i+1;// O i--;			la estructura repetitiva.
 	}
 
-	*/
+
 
 
 }//FIN DE LA FUNCIÓN
