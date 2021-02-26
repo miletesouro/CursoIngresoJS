@@ -18,6 +18,19 @@ function mostrar()
 
 	}
 
+	/*
+	var i; declaracion de variable de control
+	i = 0; inicializacion de la variable de control.
+	
+	while( i < 3) 
+	{
+		alert ("Hola");		para que se ejecute 3 veces
+		i = i+1; O i++;			la estructura repetitiva.
+	}
+
+	*/
+
+
 }//FIN DE LA FUNCIÓN
 
 /*while(condicion)
