@@ -11,18 +11,97 @@ Más de 10 intentos: “afortunado en el amor!!”.*/
 
 var numeroSecreto; 
 var contadorIntentos;
+var numeroInicial;
+var numeroFinal;
+
+numeroInicial = 1;
+numeroFinal = 100;
+contadorIntentos = 1;
 
 function comenzar()
 {
-	//Genero el número RANDOM entre 1 y 100
-	 
-	
-
+	numeroSecreto = Math.floor((Math.random() * numeroInicial) + numeroFinal);
 }
 
 function verificar()
-{
-	
+{	switch (contadorIntentos) {
+
+	case 1:
+	if (numeroIngresado == numeroSecreto)
+	{
+		contadorIntentos = contadorIntentos + 1;
+		document.getelementById('txtIdIntentos').value = "Usted es un psíquico!";
+	}
+	break;
+	case 2:
+		contadorIntentos = contadorIntentos + 1;
+		if (numeroIngresado == numeroSecreto) {
+	document.getelementById('txtIdIntentos').value = "Excelente percepcion";}
+	break;
+	case 3:
+		contadorIntentos = contadorIntentos + 1;
+		if(numeroIngresado == numeroSecreto)
+		{
+			document.getelementById('txtIdIntentos').value = "Esto es suerte";
+		}
+	break;
+	case 4:
+		contadorIntentos = contadorIntentos + 1;
+		if(numeroIngresado == numeroSecreto)
+		{
+			document.getelementById('txtIdIntentos').value = "Excelente tecnica";
+		}
+	break;
+	case 5:
+		contadorIntentos = contadorIntentos + 1;
+		if (numeroIngresado== numeroSecreto)
+		{
+			document.getelementById('txtIdIntentos').value = "Usted esta en la media";
+		}
+		break;
+		case 6:
+		contadorIntentos = contadorIntentos + 1;
+		if (numeroIngresado== numeroSecreto)
+		{
+			document.getelementById('txtIdIntentos').value = "Usted esta en la media";
+		}
+		break;
+		case 7:
+		contadorIntentos = contadorIntentos + 1;
+		if (numeroIngresado== numeroSecreto)
+		{
+			document.getelementById('txtIdIntentos').value = "Usted esta en la media";
+		}
+		break;
+		case 8:
+		contadorIntentos = contadorIntentos + 1;
+		if (numeroIngresado== numeroSecreto)
+		{
+			document.getelementById('txtIdIntentos').value = "Usted esta en la media";
+		}
+		break;
+		case 9:
+		if (numeroIngresado== numeroSecreto)
+		contadorIntentos = contadorIntentos + 1;
+			{
+							document.getelementById('txtIdIntentos').value = "Usted esta en la media";
+			}
+		break;
+		case 10:
+		contadorIntentos = contadorIntentos + 1;
+		if (numeroIngresado== numeroSecreto)
+		{
+			document.getelementById('txtIdIntentos').value = "Usted esta en la media";
+		}
+		break;
+		default:
+								contadorIntentos = contadorIntentos + 1;
+								if (numeroIngresado== numeroSecreto)
+		{
+			document.getelementById('txtIdIntentos').value = "Afortunado en el amor!!!";
+		}
+	break;
 	
 
+}
 }
