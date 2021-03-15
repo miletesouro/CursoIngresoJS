@@ -1,0 +1,51 @@
+
+ prompt ("Ingrese ");
+
+ .toLowerCase();
+ .toUpperCase();
+
+while ( || ( != "" && != "" && != "" && != "") )  ) 
+{
+ = prompt("Reingrese ");
+}
+
+while () 
+{
+ = prompt("Reingrese ");
+}
+
+isNaN()
+
+!(isNaN())
+
+if ()
+{
+
+} else {
+
+}
+
+switch() {
+    case :
+    break;
+
+    case :
+    break;
+
+    case :
+    break;
+
+    case :
+    break;
+
+    case :
+    break;
+}
+
+
+document.write("" + "<br>");
+
+
+
+
+

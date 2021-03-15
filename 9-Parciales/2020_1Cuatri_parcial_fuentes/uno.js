@@ -1,117 +1,56 @@
-/*Debemos realizar la carga de 5(cinco) productos de prevención de contagio,
-de cada una debo obtener los siguientes datos:
+/*Debemos realizar la carga de 5(cinco) productos de prevención de 
+contagio, de cada una debo obtener los siguientes datos:
 el tipo (validar "barbijo" , "jabón" o "alcohol") ,
 el precio (validar entre 100 y 300),
-la cantidad de unidades (no puede ser 0 o negativo y no debe superar las 1000 unidades),
+la cantidad de unidades (no puede ser 0 o negativo y no debe
+	 superar las 1000 unidades),
 la Marca y el fabricante.
 Se debe Informar al usuario lo siguiente:
-a) Del más barato de los alcohol, la cantidad de unidades y el fabricante
+a) Del más barato de los alcohol, la cantidad de unidades
+ y el fabricante
 b) Del tipo con mas unidades, el promedio por compra
 c) Cuántas unidades de jabones hay en total*/
 
 function mostrar()
 { 
-	//pedir tipo y validar (barbijo, jabon, alcohol)
-	var tipo;
+	var tipoProducto;
 	var precio;
 	var cantidad;
 	var marca;
 	var fabricante;
-	var i; //variable de control
-	var precioMinimoAlcohol;
-	var cantidadMinimoAlcohol;
-	var fabricanteMinimoAlcohol;
-	var cantidadAlcohol;
-	var acumuladorAlcohol;
-	var cantidadBarbijos;
-	var acumuladorBarbijos;
-	var cantidadJabon;
-	var acumuladorJabon;
-	var tipoParaPromedio;
-	var promedio;
+	var i;
 
-	cantidadAlcohol =0;
-	acumuladorAlcohol =0;
-	cantidadBarbijos =0;
-	acumuladorAlcohol =0;
-	cantidadJabon =0;
-	acumuladorJabon =0;
 	i = 0;
 
-	for (i=0; i<5; i++)
+	while (i<5) 
 	{
-		tipo = prompt("Ingrese tipo:");
-		tipo = tipo.toLowerCase();
-		while (isNaN(tipo)==false || (tipo !="barbijo" && tipo !="jabon" && tipo!="alcohol"))
+		tipoProducto = prompt ("Ingrese el tipo de producto:");
+		tipoProducto = tipoProducto.toLowerCase();
+		while ( !(isNaN(tipoProducto)) || (tipoProducto != "barbijo" && tipoProducto != "jabon" && tipoProducto != "alcohol") )  ) 
 		{
-			tipo = prompt("Error! Reingrese tipo:");
+			tipoProducto = prompt("Reingrese el tipo de producto:");
 		}
-		precio = prompt("Ingrese precio:");
+
+		precio = prompt ("Ingrese el precio del producto:");
 		precio = parseFloat(precio);
-		while(precio<99 || precio>301)
+		while ((isNaN(precio)) || (precio>100 && precio<300)) 
 		{
-			precio = prompt ("Error! Reingrese precio entre 100 y 300:");
+			precio = prompt("Reingrese el precio del producto:");
 			precio = parseFloat(precio);
 		}
-		cantidad = prompt("Ingrese cantidad (hasta 1000 unidades)");
+
+		cantidad = prompt ("Ingrese la cantidad del producto:");
 		cantidad = parseInt(cantidad);
-		while(isNaN(cantidad)==false && cantidad>1000)
+		while ((!(isNaN(cantidad))) || cantidad<1000)
 		{
-			cantidad = prompt("Error!! Reingrese cantidad, recorda que se puede hasta 1000.");
+ 			cantidad = prompt("Reingrese la cantidad del producto:");
 			cantidad = parseInt(cantidad);
 		}
-		marca = prompt("Ingrese marca:");
-		fabricante = prompt("Ingrese fabricante:");
 
-		
+		marca = prompt ("Ingrese la marca del producto:");
+		fabricante = prompt ("Ingrese el fabricante del producto:");
 
-		switch(tipo) {
-			case "alcohol": 
-			if(tipo=="alcohol")
-		{
-			if (cantidadAlcohol == 0 || precio<precioMinimoAlcohol) 
-			{
-				precioMinimoAlcohol = precio;
-				cantidadMinimoAlcohol = cantidad;
-				fabricanteMinimoAlcohol = fabricante;
-			}
-		}
-				cantidadAlcohol ++;
-				acumuladorAlcohol = acumuladorAlcohol + cantidad;
-			break;
 
-			case "barbijo":
-				cantidadBarbijos ++;
-				acumuladorBarbijos = acumuladorBarbijos + cantidad;
-			break;
-
-			case "jabon":
-				cantidadJabon ++;
-				acumuladorJabon = acumuladorJabon + cantidad;
-			break;
-		}
-	}
-
-	if(acumuladorJabon>acumuladorBarbijos && acumuladorJabon>acumuladorAlcohol)
-	{
-		tipoParaPromedio = "jabones";
-		promedio = acumuladorJabon / cantidadJabon;
-	} else {
-		if (acumuladorBarbijos > acumuladorJabon )
-		{
-			tipoParaPromedio = "barbijo";
-			promedio = acumuladorBarbijos / cantidadBarbijos;
-		} else {
-			tipoParaPromedio = "alcohol";
-			promedio = acumuladorAlcohol / cantidadAlcohol;
-		}
-	}
-
-	if(cantidadAlcohol!=0)
-	{
-		document.write()
-
-	} else {
 
 	}
 }
